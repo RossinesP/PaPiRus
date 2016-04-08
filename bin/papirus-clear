@@ -4,10 +4,10 @@ import os
 import sys
 from papirus import Papirus
 
-user = os.getuid()
-if user != 0:
-    print "Please run script as root"
-    sys.exit()
+#user = os.getuid()
+#if user != 0:
+#    print "Please run script as root"
+#    sys.exit()
 
 def main():
     papirus = Papirus()

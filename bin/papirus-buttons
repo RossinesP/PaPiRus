@@ -10,10 +10,10 @@ from time import sleep
 import RPi.GPIO as GPIO
 
 
-user = os.getuid()
-if user != 0:
-    print "Please run script as root"
-    sys.exit()
+#user = os.getuid()
+#if user != 0:
+#    print "Please run script as root"
+#    sys.exit()
 
 # Command line usage
 # papirus-buttons

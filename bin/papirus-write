@@ -8,10 +8,10 @@ from PIL import ImageDraw
 from PIL import ImageFont
 import argparse
 
-user = os.getuid()
-if user != 0:
-    print "Please run script as root"
-    sys.exit()
+#user = os.getuid()
+#if user != 0:
+#    print "Please run script as root"
+#    sys.exit()
 
 # Command line usage
 # papirus-wite "Some text to write"

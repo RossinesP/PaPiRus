@@ -25,10 +25,10 @@ from datetime import datetime
 import time
 from papirus import Papirus
 
-user = os.getuid()
-if user != 0:
-    print "Please run script as root"
-    sys.exit()
+#user = os.getuid()
+#if user != 0:
+#    print "Please run script as root"
+#    sys.exit()
     
 WHITE = 1
 BLACK = 0

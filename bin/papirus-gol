@@ -14,10 +14,10 @@ BLACK = 0
 CELLSIZE = 10
 
 
-user = os.getuid()
-if user != 0:
-    print "Please run script as root"
-    sys.exit()
+#user = os.getuid()
+#if user != 0:
+#    print "Please run script as root"
+#    sys.exit()
 
 
 #Colours the cells green for life and white for no life
