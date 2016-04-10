@@ -20,7 +20,7 @@ curl -sSL https://goo.gl/i1Imel | sudo bash
 # Install dependencies
 sudo apt-get install python-imaging
 
-git clone https://github.com/PiSupply/PaPiRus.git
+git clone https://github.com/RossinesP/PaPiRus.git
 cd PaPiRus
 sudo python setup.py install    # Install PaPirRus python library
 ```
@@ -36,15 +36,22 @@ papirus-setup    # This will auto install the driver
 sudo apt-get install libfuse-dev -y
 
 sudo mkdir /tmp/papirus
+sudo chmown pi: /tmp/papirus
 cd /tmp/papirus
 git clone https://github.com/repaper/gratis.git
 
 cd /tmp/papirus/gratis-master/PlatformWithOS
-make rpi-epd_fuse
-sudo make rpi-install
+sudo make PANEL_VERSION=V231_G2 rpi-epd_fuse
+sudo make PANEL_VERSION=V231_G2 rpi-install
 sudo service epd-fuse start
 ```
 
+# Setup the screen
+```bash
+sudo papirus-config
+
+# setup the screen size
+```
 # Python API
 
 #### The Basic API
